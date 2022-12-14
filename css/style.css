@@ -1,0 +1,91 @@
+/*
+Colors used:
+Primary Color (Black): #151515;
+Secondary Color (Dark Grey): #535458;
+Grey: #898b93
+Light Grey: #C1C3CB
+Pink: #e2d5d1
+Blue #497cff
+*/
+
+body {
+    background-color:#ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal; 
+}
+h1 {
+    font-family: Playfair Display, serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: normal;
+    color:
+}
+h2 {
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12em;
+    color: #000000
+}
+h3 {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.06em;
+    color: #000000
+}
+h4 {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: normal;
+    color: #000000
+}
+h5 {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 1.0em;
+    font-weight: 400;
+    line-height: normal;
+    color: #000000
+}
+img {
+    width: 100%
+}
+a {
+    color: #497cff;
+    text-decoration: none; /* No underlining */
+}
+a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+a:visited {
+    color:purple
+}
+a:active { /*selected link*/
+    color: #994c30
+}    
+a:hover,
+a:focus {
+    color: #535458
+    text-decoration underline; /* Underlining when hovering over a link */
+}
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #69848c;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.2s opacity;
+}
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
