@@ -3,10 +3,21 @@ Colors used:
 Primary Color (Black): #151515;
 Secondary Color (Dark Grey): #535458;
 Grey: #898b93
-Light Grey: #C1C3CB
+Light Grey: #c1c3cb
 Pink: #e2d5d1
 Blue #497cff
 */
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding:10px 0;
+    border-bottom: 0.5px solid #000000;
+    position: fixed;
+    width: 100%;
+}
+main {
+    padding-top: 116.81px
+}
 
 body {
     background-color:#ffffff;
@@ -24,7 +35,7 @@ h1 {
 }
 h2 {
     font-family: Nunito, sans-serif;
-    font-size: 16px;
+    font-size: 1.125em;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.12em;
@@ -55,25 +66,196 @@ h5 {
 img {
     width: 100%
 }
+
+/* Layout Styling */
+.container {
+    padding: 0 16px
+}
+
+#work .row {padding-bottom: 32px;}
+
+#work {
+    padding-bottom: 16px;
+}
+
+#hero h4,h5 {
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+nav>ul>li {
+    display: inline-block;
+}
+nav>ul>li>a {
+    padding: 0 15px;
+    color: #000000;
+}
+nav {
+    display: inline-block;
+    width: 100%;
+}
+/* HERO SECTION */
+#hero {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+  }
+#hero h4 {
+    margin: 0px;
+}
+#hero h5 {
+    text-align: center;
+    margin: 8px 0px 0px 0px;
+}
+
+/* WORK SECTION */
+#work h1 {
+    text-align: center;
+}
+#work h2 {
+    padding-top: 8px;
+    margin: 0px
+}
+#work p {
+    margin: 0px;
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+
+/* ABOUT */
+.jenny {
+    max-width: 226px;
+    display: block;
+    margin: 0 auto;
+}
+#hero h1 {
+    text-align: center;
+}
+
+#about {
+    text-align: center;
+}
+
+#about h3 {
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 6px;
+}
+.skills {
+    padding-top: 32px;
+    padding-bottom: 32px; 
+}
+
+.skills h1 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.tools {
+    margin: 0;
+    padding-top: 12px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+
+/* MINDFUL EATS Project Page */
+#workcontent h4 {
+    margin: 0;
+    padding-top: 32px;
+}
+#workcontent h1 {
+    color:#535458;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2d5d1;
+}
+
+.title {
+    background-color:#e2d5d1;
+    margin: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+#workcontent p {
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 12px;
+}
+#workcontent>ul>li {
+    color: #898b93
+}
+
+.projectinfo {
+    color:#535458;
+    font-size: 0.9em;
+    padding-bottom: 24px;
+}
+
+/* FOOTER */
+footer {
+    background:#e2d5d1;
+    padding-top: 32px;
+    padding-bottom: 20px
+}
+
+footer {
+    text-align: center;
+}
+
+footer h1 {
+    margin: 0px;
+}
+
+#social {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    margin: 0px;
+}
+#social>ul {
+    list-style-type: none;
+}
+#social>ul>li {
+    display: inline-block;
+}
+#social>ul>li>a {
+    padding: 0 12px;
+    color: #000000;
+}
+
+  /* LINKS */
 a {
     color: #497cff;
     text-decoration: none; /* No underlining */
 }
-a:hover {
-    opacity: 0.8;
-    text-decoration: underline;
+nav>ul>li>a:visited {
+    color: purple;
 }
-
-a:visited {
-    color:purple
-}
-a:active { /*selected link*/
+nav>ul>li>a:active { /*selected link*/
     color: #994c30
 }    
-a:hover,
+nav>ul>li>a:hover,
 a:focus {
-    color: #535458
-    text-decoration underline; /* Underlining when hovering over a link */
+    opacity: 0.8;
+    text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 .button {
@@ -82,10 +264,11 @@ a:focus {
     color: #ffffff; /* needed to override the default link color */
     font-weight: 600;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 6px;
     transition: 0.2s opacity;
 }
 .button:hover {
     opacity: 0.8;
     text-decoration: none;
 }
+
