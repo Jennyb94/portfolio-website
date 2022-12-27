@@ -18,7 +18,7 @@
     </head>
     <body>
         <header>
-            <div>
+            <div class="container">
                 <a href="index.html">
                     <img src="img/jblogo.svg" alt="Jenny Barron" class="logo">
                 </a>
@@ -34,8 +34,18 @@
 
         <main>
             <div id="hero"> <!--hero section-->
-                <div class="container">
-                    <h3>About Me</h3>
+                <div class="container abouttitle">
+                    <div class="fruit col">
+                        <source srcset="img/fruits.png" media="(max-width:767px)">
+                        <img src="img/fruits.png" alt="My Image">
+                    </div>
+                    <div>
+                        <h3 class="col">About Me</h3>
+                    </div>
+                    <div class="fruitright col">
+                        <source srcset="img/fruits.png" media="(max-width:767px)">
+                        <img src="img/fruits.png" alt="My Image">
+                    </div>
                 </div>
             </div>
         <!-- Content -->
@@ -50,30 +60,32 @@
                                 <p>Hi, my name is Jenny! I am a Toronto based UX/UI designer with a background in traditional art and illustration. I strive to bring ideas and concepts to life using principles of user-centred design. My goal is to create accessible and beautifully designed digital products through a highly involved creative process.</p>
                                 <a href="files/ResumePlaceholder.pdf" class="button">View Resume</a>
                             </div>
-                            <div class="skills"> 
+                            <div class="skills row"> 
                                 <h3>SKILLS &amp; TOOLS</h3>
-                                <div>
-                                    <h4>Relevant Skills</h4>
-                                    <ul>
-                                        <li>UI Design</li>
-                                        <li>UX Research</li>
-                                        <li>User Testing</li>
-                                        <li>Prototyping</li>
-                                        <li>Illustration</li>
-                                        <li>Graphic Design</li>
-                                        <li>Frontend Development</li>
-                                    </ul>
-                                </div> 
-                                <div class="tools"> 
-                                    <h4>Tools</h4>
-                                    <ul>
-                                        <li>Adobe Illustrator</li>
-                                        <li>Adobe Photoshop</li>
-                                        <li>Figma</li>
-                                        <li>Invision</li>
-                                        <li>Zepelin</li>
-                                    </ul>
-                                </div>
+                                    <div class="skill col-md-6 solid left">
+                                        <h4>Relevant Skills</h4>
+                                        <ul>
+                                            <li>UI Design</li>
+                                            <li>UX Research</li>
+                                            <li>User Testing</li>
+                                            <li>Prototyping</li>
+                                            <li>Illustration</li>
+                                            <li>Graphic Design</li>
+                                            <li>Frontend Development</li>
+                                        </ul>
+                                    </div> 
+                                    <div class="tools col-md-6 solid right"> 
+                                        <h4>Tools</h4>
+                                        <ul>
+                                            <li>Figma</li>
+                                            <li>Webflow</li>
+                                            <li>Invision</li>
+                                            <li>Zepelin</li>
+                                            <li>Balsamiq</li>
+                                            <li>Adobe Illustrator</li>
+                                            <li>Adobe Photoshop</li>
+                                        </ul>
+                                    </div>
                             </div>
                         </div>
                 </div>
