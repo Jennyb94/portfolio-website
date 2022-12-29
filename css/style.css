@@ -26,7 +26,7 @@ body {
     line-height: normal; 
 }
 h1 {
-    font-family: Nunito Sans, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
     line-height: normal;
@@ -41,14 +41,14 @@ h2 {
     color: #000000
 }
 h3 {
-    font-family: Playfair Display, serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.5em;
     font-weight: 600;
     line-height: normal;
     color: #000000
 }
 h4 {
-    font-family: Nunito Sans, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.0em;
     font-weight: 700;
     line-height: normal;
@@ -56,14 +56,14 @@ h4 {
     color: #000000
 }
 h5 {
-    font-family: Nunito Sans, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.0em;
     font-weight: 400;
     line-height: normal;
     color: #000000
 }
 .h5 {
-    font-family: Nunito Sans, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.0em;
     font-weight: 400;
     line-height: normal;
@@ -333,6 +333,7 @@ hr.solid {
     padding-bottom:0px;
 }
 
+/* WIREFRAMES */
 .wireframes {
     background-color: #151515;
     margin: 0 -16px;
@@ -343,7 +344,7 @@ hr.solid {
     margin: 0 16px;
 }
 
-/* design */
+/* DESIGN */
 .colorpalette {
     background-color: #151515;
     padding: 48px 24px;
@@ -354,9 +355,9 @@ hr.solid {
     padding: 32px 0;
     margin: 0 20px;
 }
-.icons.col-lg-6 {
+.icons {
     padding-top: 16px;
-}
+} /* ?????? *?
 
 /* prototype */
 
@@ -375,8 +376,8 @@ hr.solid {
 }
 
 .prototype ul {
-    padding-top:8px;
-    padding-bottom:16px;
+    padding-top:12px;
+    padding-bottom:24px;
 }
 
 .prototype>ul>li {
@@ -388,8 +389,8 @@ hr.solid {
     background-color: #ffffff;
     color: #000000;
     font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 10px;
+    padding: 4px 12px;
+    border-radius: 12px;
     text-align: center;
 }
 
@@ -405,6 +406,9 @@ hr.solid {
 .mobileimg {
     max-width: 156px;
 } */
+.before img {
+    padding-top: 12px;
+}
 .after img {
     padding-top: 12px;
 }
@@ -427,6 +431,11 @@ hr.solid {
   }
 
 /* mockups */
+#workcontent .mockups {
+    background-color: #151515;
+    color: #ffffff;
+    margin: 0 -16px;
+}
 
 .mobilemockup {
     max-width: 233px;
@@ -436,17 +445,23 @@ hr.solid {
 #workcontent .mockups .h4alt {
     border-top: none;
     padding-bottom: 6px;
+    color: #ffffff;
 }
 
 #workcontent .mockups h4 {
     border-top: 1px solid #c1c3cb;
-    padding-top: 12px;
-    margin-top: 16px;
+    padding: 24px 16px 10px;
+    margin-top: 20px;
+    color: #ffffff;
 }
 
 .mockups p {
+    padding: 0 16px 16px 16px;
     margin: 0;
-    padding-bottom: 16px;
+}
+
+.mockups.responsive {
+    margin: 0 16px;
 }
 
 .imgfullspan {
@@ -579,55 +594,103 @@ a:focus {
         position: relative;
         left: 32px;
     }
-/*
-    .skills h4 {
-        text-align: left;
+    .textstyles.row {
         display: block;
+        margin: 0 auto;
     }
-
-    .skills ul {
-        text-align: left;
+    img.six {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
     }
-    /*#about .col-md-6 {
-        float: left;
-        width: 50%;
-        margin: 0 16px; 
-        box-sizing: border-box;
-        width: 218px;
-        height: 217px;
-        padding: 16px 24px;  
-        border: 2px solid #e2d5d1
-    } */
-    /*#about .right {
-        float: right;
-        margin:0 60px 0 0;
-    }
-    #about .left {
-        float: left;
-        margin:0 0 0 60px;
-    } */
 }
   
 
-
 /***** Large devices *****/
 @media only screen and (min-width: 1024px) {
+
+    /* Home Page & General Styling */
     .col-lg-7 {
         width: 58.33%;
     }
     .col-lg-5 {
         width: 41.66%;
     }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+    .row::after {
+        content: "";
+        clear:both;
+        display:table;
+    }
     .container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
-
     body {
         font-family: 'Nunito Sans', sans-serif;
         font-size: 18px;
     }
+
+/********* L ABOUT *********/
+        .skills {
+            box-sizing: border-box;
+            width: 528px;
+            height: 400px;
+            margin: 0 auto;
+        } 
+    
+        #about .col-md-6 {
+            box-sizing: border-box;
+            width: 240px;
+            height: 244px;
+            padding: 16px 24px; 
+        }
+    
+        #about .left {
+            margin: 0;
+            position: relative;
+        }
+        #about .right {
+            margin: 0;
+            position: relative;
+            left: 48px;
+        }
+
+
+    /***** L MINDFUL EATS PROJECT PAGE ****/
+
+    #workcontent .descript picture {
+        margin: 0px;
+        display:block;
+    }
+    .title {
+        background-color:#e2d5d1;
+        margin: 80px 0 24px 0;
+        padding: 32px 16px;
+        text-align: center;
+    }
+    .title1 {
+        background-color:#e2d5d1;
+        margin: 32px 0 24px 0;
+        padding: 32px 16px;
+        text-align: center;
+    }
+    #workcontent h3 {
+        margin: 0px;
+        padding-top: 60px;
+        padding-bottom: 6px;
+        padding-left: 0;
+        border-bottom: 1px solid #e2d5d1;
+        margin-bottom: 24px; /**?**/
+        text-align: center;
+    }
+
+/* Research - competitive analysis */
     #research .row {
         box-sizing:border-box;
         width: 1048px;
@@ -642,7 +705,6 @@ a:focus {
         padding: 16px 24px; 
         margin: 0;
     }
-
     #research .left {
         margin: 0;
         position: relative;
@@ -652,14 +714,8 @@ a:focus {
         position: relative;
         left: 48px;
     }
-
     img.kslogo {
         margin: 0 auto;
-    }
-    .quote {
-        max-width: 400px;
-        margin: 0 auto;
-        display: block;
     }
     .col-lg-6 {
         width: 50%;
@@ -669,7 +725,16 @@ a:focus {
         clear:both;
         display:table;
     }
-    img.wireframe {
+    .quote {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 16px;
+    }
+
+
+/* WIREFRAMES */
+/*    img.wireframe {
         max-width: 200px;
     }
     .wireframes.wireframeimg.col-lg-6 {
@@ -678,61 +743,22 @@ a:focus {
         margin: 0;
         padding: 0;
     }
-
-    /********* L ABOUT *********/
-    .skills {
-        box-sizing: border-box;
-        width: 528px;
-        height: 400px;
-        margin: 0 auto;
-    } 
-
-    #about .col-md-6 {
-        box-sizing: border-box;
-        width: 240px;
-        height: 244px;
-        padding: 16px 24px; 
+*/
+    .wireframeimg {
+        width: 50%;
     }
 
-    #about .left {
-        margin: 0;
-        position: relative;
-    }
-    #about .right {
-        margin: 0;
-        position: relative;
-        left: 48px;
+    .wireframeimg {
+        float: left;
     }
 
-    /***** MINDFUL EATS PROJECT PAGE ****/
-
-    #workcontent .descript picture {
-        margin: 0px;
-        display:block;
-    }
-    .title {
-        background-color:#e2d5d1;
-        margin: 80px 0 24px 0;
-        padding: 32px 16px;
-        text-align: center;
+    .row::after {
+        content: "";
+        clear:both;
+        display:table;
     }
 
-    .title1 {
-        background-color:#e2d5d1;
-        margin: 32px 0 24px 0;
-        padding: 32px 16px;
-        text-align: center;
-    }
-
-    #workcontent h3 {
-        margin: 0px;
-        padding-top: 60px;
-        padding-bottom: 6px;
-        padding-left: 0;
-        border-bottom: 1px solid #e2d5d1;
-        margin-bottom: 24px; /**?**/
-        text-align: center;
-    }
+/* DESIGN */
     .colorpalette {
         width: 100%;
         background-color: #151515;
@@ -750,10 +776,12 @@ a:focus {
         padding-top: 140px;
         padding-left: 60px;
     }
+/* Prototyping & Validation */
     .prototype img {
         width: 50%;
     }
-
+    
+/*
     [class*="col-"] {
         float: left;
         padding: 0px;
@@ -771,6 +799,21 @@ a:focus {
       .prototype h4 {
         font-size: 18px;
       }
+    
+    div.box {
+        box-sizing: border-box;
+    }
+    div.row {
+        box-sizing: content-box;
+    }
+    p.box {
+        display: inline-block;
+    }
+
+    .responsivedesignimg {
+        width: 80%;
+  }
+    
 
     /*.prototype .row {
         display: inline-block;
@@ -803,6 +846,17 @@ a:focus {
     }
 
     } */
+
+    /* MOCKUPS */
+    img.responsive {
+        display: block;
+        margin: 0 auto;
+        padding: 32px 0;
+    }
+
+    img.six {
+        width: 50%;
+    }
 }
    
 
