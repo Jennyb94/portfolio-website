@@ -55,6 +55,7 @@ h4 {
     letter-spacing: 0.06em;
     color: #000000
 }
+
 h5 {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.0em;
@@ -141,7 +142,7 @@ nav {
     padding-bottom: 12px;
 }
 
-/***** ABOUT PAGE *****/
+/****************** ABOUT PAGE **********************/
 .jenny {
     max-width: 226px;
     display: block;
@@ -211,14 +212,6 @@ ul {
     padding: 16px 24px;
     margin: 0 60px;
     margin-bottom: 24px;
-}
-
-#about h4 {
-    display: inline-block;
-}
-
-.skill {
-    display: inline-block;
 }
 
 
@@ -337,13 +330,16 @@ hr.solid {
 .wireframes {
     background-color: #151515;
     margin: 0 -16px;
+    padding: 0 24px 32px 24px;
 }
 
 .wireframeimg {
-    padding-bottom: 32px;
-    margin: 0 16px;
+    padding-top: 32px;
+    margin: 0;
 }
-
+.wireframe-r {
+    padding-top: 24px;
+}
 /* DESIGN */
 .colorpalette {
     background-color: #151515;
@@ -356,8 +352,13 @@ hr.solid {
     margin: 0 20px;
 }
 .icons {
+    padding-top: 32px;
+    margin: 0 auto;
+}
+
+.designimg {
     padding-top: 16px;
-} /* ?????? *?
+}
 
 /* prototype */
 
@@ -399,13 +400,6 @@ hr.solid {
     padding-bottom: 6px;
 }
 
-/*.desktopimg {
-    max-width: 128px;
-}
-
-.mobileimg {
-    max-width: 156px;
-} */
 .before img {
     padding-top: 12px;
 }
@@ -417,11 +411,6 @@ hr.solid {
     box-sizing: border-box;
   }
 
-.column {
-    float: left;
-    width: 50%;
-    padding: 5px;
-  }
   
   /* Clear floats after image containers */
   .row::after {
@@ -542,7 +531,9 @@ a:focus {
     opacity: 0.8;
 }
 
-/**************** MEDIA QUERIES ******************/
+/********************************************************************************************************************************************************** 
+------------------------------------------------------------------------MEDIA QUERIES-----------------------------------------------------------------------
+************************************************************************************************************************************************************/
 
 /* Medium devices */
 @media only screen and (min-width: 640px) {
@@ -571,6 +562,7 @@ a:focus {
         clear:both;
         display:table;
     } 
+
     .skills {
         box-sizing: border-box;
         width: 468px;
@@ -592,7 +584,7 @@ a:focus {
     #about .right {
         margin: 0;
         position: relative;
-        left: 32px;
+        left: 32px; 
     }
     .textstyles.row {
         display: block;
@@ -603,6 +595,10 @@ a:focus {
         display: block;
         margin: 0 auto;
     }
+    .wireframes {
+        padding-top: 32px;
+    }
+  
 }
   
 
@@ -692,10 +688,12 @@ a:focus {
 
 /* Research - competitive analysis */
     #research .row {
-        box-sizing:border-box;
+        /*box-sizing:border-box;
         width: 1048px;
         height: 532px;
-        margin: 0 auto;
+        margin: 0 auto;*/
+        display: flex;
+        justify-content: center;
     }
     .competitiveanalysis.col-lg-6 {
         box-sizing: border-box;
@@ -706,19 +704,22 @@ a:focus {
         margin: 0;
     }
     #research .left {
-        margin: 0;
-        position: relative;
+        margin: 10px;
     }
-    #research .right {
-        margin: 0;
-        position: relative;
-        left: 48px;
+    #research .right { 
+        margin: 10px;
     }
     img.kslogo {
         margin: 0 auto;
     }
     .col-lg-6 {
         width: 50%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
     }
     .row::after {
         content: "";
@@ -734,22 +735,17 @@ a:focus {
 
 
 /* WIREFRAMES */
-/*    img.wireframe {
-        max-width: 200px;
+
+    .wireframes {
+        padding-top: 32px;
     }
-    .wireframes.wireframeimg.col-lg-6 {
-        width: 50%;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-*/
-    .wireframeimg {
-        width: 50%;
+    .wireframe-r {
+        width: 40%;
     }
 
     .wireframeimg {
         float: left;
+        padding-top: 80px;
     }
 
     .row::after {
@@ -777,10 +773,26 @@ a:focus {
         padding-left: 60px;
     }
 /* Prototyping & Validation */
-    .prototype img {
-        width: 50%;
+   
+    .before img {
+        width: 90%;
     }
-    
+    .after img {
+        width: 90%;
+    }
+
+    .prototype h4 {
+        padding-bottom: 32px;
+    }
+
+    .prototype {
+        font-size: 18px;
+
+    }
+    div.row {
+        margin: 0 auto;
+    }
+   
 /*
     [class*="col-"] {
         float: left;
