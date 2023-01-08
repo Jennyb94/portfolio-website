@@ -19,16 +19,26 @@
     <body>
         <header>
             <div class="container">
-                <a href="index.html">
-                    <img src="img/jblogo.svg" alt="Jenny Barron" class="logo">
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="index.html">
+                        <img src="img/jblogo.svg" alt="Jenny Barron" class="logo">
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="2" y1="5.5" x2="22" y2="5.5" stroke="#101010"/>
+                                <line x1="2" y1="11.5" x2="22" y2="11.5" stroke="#101010"/>
+                                <line x1="2" y1="17.5" x2="22" y2="17.5" stroke="#101010"/>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
 
@@ -69,7 +79,7 @@
                         <a href="#" class="button">View Project</a>
                     </div>
                 </div>
-                <div class="row"> <!--dahlia-->
+                <div class="row"> <!--animation-->
                     <div class="col-md-6 col-lg-7">
                         <picture>
                             <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="auto" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -715,6 +725,10 @@
                 <p>Copyright Jenny Barron 2022</p> 
             </div>
         </footer>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

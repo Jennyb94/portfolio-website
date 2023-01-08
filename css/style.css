@@ -9,14 +9,15 @@ Blue #497cff
 */
 header {
     background-color: #ffffff;
-    text-align: center;
-    padding:10px 0;
+    /*text-align: center; */
+    padding-top:40px;
+    padding-bottom:16px;
     border-bottom: 0.5px solid #000000;
     position: fixed;
     width: 100%;
 }
 main {
-    padding-top: 116.81px
+    padding-top: 81.31px
 }
 body {
     background-color:#ffffff;
@@ -88,30 +89,55 @@ img {
 #hero h1,.h5 {
     text-align: center;
 }
-
+/* -Navigation */
 .logo {
     max-width: 150px;
     text-align: center;
-    padding: 25px 0px;
-    margin: 0px 16px;
+    padding: 0px;
+    margin: 0;
 }
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: -4px;
+    font-size: 20px;
+    padding-right: 0;
+  }
 
 nav>ul {
     list-style-type: none;
-    padding: 0 16px;
-    /*margin: 0px 16px;*/
+    padding: 0;
+    margin: 0;
 }
-nav>ul>li {
-    display: inline-block;
-}
+
 nav>ul>li>a {
     padding: 0 15px;
     color: #000000;
 }
-nav {
-    display: inline-block;
-    width: 100%;
-}
+.navtoggle.responsive li  {
+    display: block;
+  }
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 0.5px solid #000000
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
 /* HERO SECTION */
 #hero {
     background-color: #ffffff;
@@ -129,6 +155,10 @@ nav {
 }
 
 /* WORK SECTION */
+ul {
+    padding: 0;
+}
+
 #work h3 {
     text-align: center;
 }
@@ -153,7 +183,6 @@ nav {
 }
 .fruitright {
     max-width: 90px;
-    transform: scalex(-1)
 }
 h3.col {
     padding: 8px 0;
@@ -199,12 +228,13 @@ h3.col {
     margin: 0;
     padding-top: 12px;
 }
-ul {
+.skills ul {
     list-style-type: none;
     padding: 0px;
     margin: 0;
     display: inline-block;
 }
+
 #about .solid {
     border-style:solid;
     border-width:2px;
@@ -249,6 +279,7 @@ ul {
     color:#535458;
     font-size: 0.9em;
     padding-bottom: 24px;
+    padding-left: 0px;
 }
 
 #workcontent .projectinfo {
@@ -299,6 +330,7 @@ ul {
 #features>ul {
     list-style-type: disc;
     margin: 0 16px;
+    padding: 0;
 }
 
 .food52 {
@@ -546,8 +578,30 @@ a:focus {
       float: right;
       margin-top: 22px;
     }
+    nav>ul>li {
+        display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+    }
+    nav > ul {
+        margin: 1em 0;
+    }
+    .logo {
+        padding-top: 40px;
+    }
     main {
-        padding-top: 108.31px
+        padding-top: 109px
+    }
+
+    .navtoggle.responsive li {
+        border-top: 0 solid white;
+    }
+    .navtoggle.responsive nav {
+        padding: 0;
     }
     
     .col-md-6 {
@@ -605,6 +659,17 @@ a:focus {
 /***** Large devices *****/
 @media only screen and (min-width: 1024px) {
 
+
+    .logo {
+        padding-top: 42px;
+    }
+    main {
+        padding-top: 116px
+    }
+    /*.navtoggle.responsive nav {
+        padding: 0;
+        margin: 0; 
+    }*/
     /* Home Page & General Styling */
     .col-lg-7 {
         width: 58.33%;
@@ -793,71 +858,7 @@ a:focus {
         margin: 0 auto;
     }
    
-/*
-    [class*="col-"] {
-        float: left;
-        padding: 0px;
-    }
-    .column {
-        float: left;
-        width: 50%;
-        padding: 5px;
-      }
-      .prototype p {
-        display: inline-block;
-        font-size: 18px;
-      }
 
-      .prototype h4 {
-        font-size: 18px;
-      }
-    
-    div.box {
-        box-sizing: border-box;
-    }
-    div.row {
-        box-sizing: content-box;
-    }
-    p.box {
-        display: inline-block;
-    }
-
-    .responsivedesignimg {
-        width: 80%;
-  }
-    
-
-    /*.prototype .row {
-        display: inline-block;
-    }
-
-    .prototype.column {
-        box-sizing: border-box;
-        width: 264px;
-        height: 714px;
-    }
-
-    .desktopimg p {
-        box-sizing: border-box;
-        width: 300px;
-        height: 800px;
-        margin: 0;
-        position: relative;  
-    }  
-
-    .desktopimg picture {
-        margin: 0;
-        position: relative;
-        bottom: 16px;
-    }
-    /*  .prototype .column {
-        box-sizing: border-box;
-        width: 264px;
-        height: 714px;
-        padding: 16px 24px; 
-    }
-
-    } */
 
     /* MOCKUPS */
     img.responsive {
