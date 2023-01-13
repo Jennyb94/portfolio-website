@@ -93,7 +93,7 @@ img {
 .logo {
     max-width: 150px;
     text-align: center;
-    padding: 0px;
+    padding: 0;
     margin: 0;
 }
 
@@ -246,6 +246,7 @@ h3.col {
 
 
 /***** MINDFUL EATS PROJECT PAGE *****/
+
 #workcontent h1 {
     margin: 0;
     padding-top: 32px;
@@ -514,6 +515,12 @@ footer {
 
 footer h3 {
     margin: 0px;
+}
+
+.email {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 0;
 }
 
 #social {
