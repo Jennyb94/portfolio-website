@@ -307,7 +307,7 @@ h3.col {
 
 .titlealt {
     background-color:#e2d5d1;
-    margin: 24px -16px 0px;
+    margin: 24px -16px 0;
     padding: 32px 16px;
     text-align: center;
 }
@@ -321,7 +321,7 @@ h3.col {
 
 #workcontent ul {
     list-style-type: disc;
-    margin: 0 16px;
+    margin: 0 20px;
 }
 
 #features p {
@@ -452,6 +452,7 @@ hr.solid {
     display: table;
   }
 
+
 /* mockups */
 #workcontent .mockups {
     background-color: #151515;
@@ -467,6 +468,7 @@ hr.solid {
 #workcontent .mockups .h4alt {
     border-top: none;
     padding-bottom: 6px;
+    margin-top: 0;
     color: #ffffff;
 }
 
@@ -486,10 +488,23 @@ hr.solid {
     margin: 0 16px;
 }
 
-.imgfullspan {
+img.responsive {
+    display: block;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+img.six {
+    padding: 0 32px 32px;
+}
+
+/*.imgfullspan {
     margin: 0 -16px;
     margin-top: 16px;
-}
+} */
+
+/*.imgfullspan {
+    margin-bottom: 0;
+} */
 
 .h44 {
     border-bottom: 1px solid #151515;
@@ -501,6 +516,7 @@ hr.solid {
     margin-top: 32px;
     margin-bottom: 60px;
 }
+
 
 /****************** FOOTER ********************/
 footer {
@@ -558,7 +574,7 @@ a:focus {
 
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #69848c;
+    background-color: #617a82;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 600;
     text-decoration: none;
@@ -580,6 +596,9 @@ a:focus {
       text-align: unset;
       padding: 20px 0 13px;
     }
+    /*.container {
+        padding: 0 30px
+    } */
     nav {
       width: auto;
       float: right;
@@ -655,11 +674,75 @@ a:focus {
         width: 60%;
         display: block;
         margin: 0 auto;
+        padding-top: 16px;
+        padding-bottom: 32px;
     }
     .wireframes {
         padding-top: 32px;
     }
+    .before img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    .after img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    .mockups .responsive {
+        padding: 30px;
+    }
+    .mockups ul {
+        padding: 30px;
+    }
+    #workcontent .mockups {
+        padding: 0 30px;
+    }
   
+    #workcontent .mockups .h4alt {
+    margin-top: 0;
+    }
+    #workcontent .thankyou h3 {
+        border-bottom: none;
+    }
+    .food52 {
+        max-width: 116px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .kslogo {
+        max-width: 193px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 32px;
+
+    }
+    .quote {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+    .competitiveanalysis.col-lg-6.left {
+    float: none;
+    }
+    .wireframeimg {
+        padding-top: 32px;
+        width: 80%;
+    }
+    .wireframeimg.col-lg-7 {
+        display: block;
+        margin: 0 auto;
+        float: none;
+    }
+    .wireframe-r.col-lg-5 {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        width: 80%;
+    }
 }
   
 
@@ -810,6 +893,7 @@ a:focus {
 
     .wireframes {
         padding-top: 32px;
+        margin: 0;
     }
     .wireframe-r {
         width: 40%;
@@ -825,6 +909,13 @@ a:focus {
         clear:both;
         display:table;
     }
+    .titlealt {
+        background-color:#e2d5d1;
+        margin: 24px 0 0;
+        padding: 32px 16px;
+        text-align: center;
+    }
+
 
 /* DESIGN */
     .colorpalette {
@@ -846,6 +937,10 @@ a:focus {
     }
 /* Prototyping & Validation */
    
+    .prototype {
+        margin: 0;
+    }
+
     .before img {
         width: 90%;
     }
@@ -866,16 +961,26 @@ a:focus {
     }
    
 
-
     /* MOCKUPS */
+    #workcontent .mockups {
+        margin: 0;
+    }
+
     img.responsive {
         display: block;
         margin: 0 auto;
-        padding: 32px 0;
+        padding: 32px 32px;
     }
 
     img.six {
         width: 50%;
+    }
+    /* Reflection */
+    .titlealt2 {
+        margin: 24px 0 0;
+    }
+    #workcontent .thankyou h3 {
+        border-bottom: none;
     }
 }
    
